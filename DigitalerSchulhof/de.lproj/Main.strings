@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Abbrechen"; ObjectID = "6iz-yV-bWs"; */
+"6iz-yV-bWs.normalTitle" = "Abbrechen";
+
+/* Class = "UILabel"; text = "Profil"; ObjectID = "8ae-oM-CWw"; */
+"8ae-oM-CWw.text" = "Profil";
+
+/* Class = "UITextField"; placeholder = "Passwort"; ObjectID = "Mqg-xk-MFw"; */
+"Mqg-xk-MFw.placeholder" = "Passwort";
+
+/* Class = "UILabel"; text = "Nutzerkonto"; ObjectID = "VLi-WE-6ej"; */
+"VLi-WE-6ej.text" = "Nutzerkonto";
+
+/* Class = "UITabBarItem"; title = "Schulhof"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Schulhof";
+
+/* Class = "UITabBarItem"; title = "Profil"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Profil";
+
+/* Class = "UITabBarItem"; title = "Website"; ObjectID = "dl5-1w-Osm"; */
+"dl5-1w-Osm.title" = "Website";
+
+/* Class = "UITextField"; placeholder = "Benutzername"; ObjectID = "iPc-EZ-FHE"; */
+"iPc-EZ-FHE.placeholder" = "Benutzername";
+
+/* Class = "UITextField"; placeholder = "https://www.adresse-der-schule.de"; ObjectID = "lhN-rb-nkL"; */
+"lhN-rb-nkL.placeholder" = "https://www.adresse-der-schule.de";
+
+/* Class = "UILabel"; text = "Schule"; ObjectID = "nhm-0Z-16t"; */
+"nhm-0Z-16t.text" = "Schule";
+
+/* Class = "UIButton"; normalTitle = "Speichern"; ObjectID = "obK-n6-9QL"; */
+"obK-n6-9QL.normalTitle" = "Speichern";

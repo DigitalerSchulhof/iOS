@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schulhof-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="VCschulhof" customModule="Schulhof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaH-PD-Ahg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yaH-PD-Ahg" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="REz-Se-9fd"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="yaH-PD-Ahg" secondAttribute="trailing" id="WGr-r5-F5F"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="yaH-PD-Ahg" secondAttribute="bottom" id="srn-cH-Npm"/>
+                            <constraint firstItem="yaH-PD-Ahg" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="yJZ-3l-sNW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schulhof" image="Schulhof" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="browser" destination="yaH-PD-Ahg" id="BY5-Kr-Pfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Website-->
+        <scene sceneID="uBL-2s-7F8">
+            <objects>
+                <viewController id="5Kv-5q-N3k" customClass="VCwebsite" customModule="Schulhof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dpa-A2-xoz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EE-qc-tUs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2WC-tG-KfQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0EE-qc-tUs" firstAttribute="leading" secondItem="2WC-tG-KfQ" secondAttribute="leading" id="1vK-W4-HPi"/>
+                            <constraint firstItem="0EE-qc-tUs" firstAttribute="trailing" secondItem="2WC-tG-KfQ" secondAttribute="trailing" id="DOg-pd-gov"/>
+                            <constraint firstItem="0EE-qc-tUs" firstAttribute="top" secondItem="2WC-tG-KfQ" secondAttribute="top" id="ETX-F7-PFN"/>
+                            <constraint firstItem="0EE-qc-tUs" firstAttribute="bottom" secondItem="2WC-tG-KfQ" secondAttribute="bottom" id="c74-zo-hvb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Website" image="Website" id="dl5-1w-Osm"/>
+                    <connections>
+                        <outlet property="browser" destination="0EE-qc-tUs" id="SLD-fb-AZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W60-n4-5ZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1389.5999999999999" y="-321.58920539730138"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="VCprofil" customModule="Schulhof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-oM-CWw">
+                                <rect key="frame" x="166" y="30" width="43.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wsf-j9-kr5">
+                                <rect key="frame" x="10" y="60.5" width="355" height="308"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2G-qw-J7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="QUX-eJ-9rO"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8rJ-Kc-sve" id="KoE-uv-J44"/>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="Rqj-mo-qDE"/>
+                                        </connections>
+                                    </pickerView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Benutzername" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-EZ-FHE">
+                                        <rect key="frame" x="0.0" y="130" width="355" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqg-xk-MFw">
+                                        <rect key="frame" x="0.0" y="174" width="355" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-Cj-OdQ">
+                                        <rect key="frame" x="0.0" y="218" width="355" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obK-n6-9QL">
+                                                <rect key="frame" x="0.0" y="0.0" width="152.5" height="30"/>
+                                                <state key="normal" title="Speichern"/>
+                                                <connections>
+                                                    <action selector="BTNspeichern:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="09E-yq-plc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iz-yV-bWs" userLabel="Abbrechen">
+                                                <rect key="frame" x="202.5" y="0.0" width="152.5" height="30"/>
+                                                <state key="normal" title="Abbrechen">
+                                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="BTNabbrechen:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="zY1-Uq-kPI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6iz-yV-bWs" firstAttribute="leading" secondItem="obK-n6-9QL" secondAttribute="trailing" constant="50" id="DwH-Wm-Ntb"/>
+                                            <constraint firstItem="6iz-yV-bWs" firstAttribute="leading" secondItem="obK-n6-9QL" secondAttribute="trailing" constant="50" id="QEE-im-daM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeU-Ms-57K" userLabel="Meldung">
+                                        <rect key="frame" x="0.0" y="258" width="355" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aeU-Ms-57K" firstAttribute="centerX" secondItem="Wsf-j9-kr5" secondAttribute="centerX" id="djV-mx-K6p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8ae-oM-CWw" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="3Cv-Qj-H3t"/>
+                            <constraint firstItem="Wsf-j9-kr5" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="K2g-GN-IFO"/>
+                            <constraint firstItem="Wsf-j9-kr5" firstAttribute="top" secondItem="8ae-oM-CWw" secondAttribute="bottom" constant="10" id="RXZ-BR-WgJ"/>
+                            <constraint firstItem="8ae-oM-CWw" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="30" id="bC5-Kv-bj3"/>
+                            <constraint firstItem="Wsf-j9-kr5" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="jsf-8P-WfF"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Wsf-j9-kr5" secondAttribute="trailing" constant="10" id="xCf-d2-VC8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="Profil" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="LBLmeldung" destination="aeU-Ms-57K" id="sPS-Kp-i9z"/>
+                        <outlet property="PICSchule" destination="L2G-qw-J7e" id="GGY-v0-tGX"/>
+                        <outlet property="TXTbenutzer" destination="iPc-EZ-FHE" id="jx5-tl-oOS"/>
+                        <outlet property="TXTpasswort" destination="Mqg-xk-MFw" id="t5t-uE-gPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="5Kv-5q-N3k" kind="relationship" relationship="viewControllers" id="cPD-6y-TEi"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profil" width="11" height="12"/>
+        <image name="Schulhof" width="11" height="13"/>
+        <image name="Website" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
